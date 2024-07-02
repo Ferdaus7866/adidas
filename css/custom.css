@@ -1,0 +1,691 @@
+/* -- Header menubar CSS code starts from here -- */
+
+header {
+    background-color: var(--bg-color);
+    padding: 20px 0px;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--primary-color);
+}
+
+.cart ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.cart ul li {
+    margin: 0;
+}
+
+.cart ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.cart ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* -- breadcrumb Code Starts From Here -- */
+
+.crumb {
+    background: #0c0c0c;
+    padding: 10px;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li a {
+    color: #767676;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+
+
+/* -- Banner hero message CSS code starts from here -- */
+
+.hero-banner {
+    background-image: url(../img/banner.jpg); /* Replace with your banner image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 78px);
+    overflow: hidden;
+}
+
+.content h3 {
+    color: #FF4B55;
+    font-size: 15px;
+    background-color: #FFEBEC;
+    padding: 6px 13px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.content h1 {
+    color: var(--primary-color);
+    font-size: 6em;
+    font-weight: 900;
+    margin-top: -15px;
+    margin-left: -5px;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.content h5 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.content h5 span {
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #c42a3e;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 4s ease-in-out 3s both;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: #d93b4f;
+}
+
+
+/* -- About Pages Content Section -- */
+
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 70px;
+}
+
+h1 em {
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.content-image {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* -- Items CSS Starts -- */
+
+
+.items {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-2-1 {
+    flex: 1;
+    margin: 10px;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-2-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.col-2-1 span {
+    display: block;
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.col-2-1 h3 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.col-2-1 p {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn-light {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #655191;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+.btn-dark {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #661b1c;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.col-2-1 a:hover {
+    background-color: #ffffff;
+    color: var(--secondary-color);
+}
+
+.add-one{
+    background-image: url(../img/add-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.add-two{
+    background-image: url(../img/add-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* -- Message Section CSS -- */
+
+.msg {
+    background: url('../img/bg.png');
+    color: #fff;
+    padding: 60px 0;
+    text-align: left;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.msg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 90%);
+    z-index: 1;
+}
+
+.container-msg {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.left-portion {max-width: 600px;}
+
+.left-portion h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.left-portion h1 em {
+    color: var(--primary-color); /* Gold color for emphasis */
+    font-style: italic;
+    font-size: 26px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.left-portion p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+/* -- Products Sectio CSS Starts Here -- */
+
+.products {
+    padding: 50px 0;
+    background-color: #fff;
+}
+.products h1{
+    text-align: center;
+}
+.col-1-4 {
+    flex: 1 1 23%;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.package img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.package h3 {
+    font-size: 20px;
+    color: #151414;
+    margin: 15px 0;
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.package span {
+    display: block;
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.package h1 {
+    width: 100%;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 70px;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+
+/* -- Products CSS here -- */
+
+.single-product {
+    padding: 50px 0;
+    background-color: #fff;
+}
+.row-special {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-1-2 {
+    flex: 1 1 48%;
+    padding: 15px;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-details {
+    padding-left: 20px;
+}
+
+.product-breadcrumb {
+    margin-bottom: 20px;
+}
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+}
+
+.breadcrumb li {
+    margin-right: 10px;
+}
+
+.breadcrumb li::after {
+    content: '>';
+    margin-left: 10px;
+    color: #ccc;
+}
+
+.breadcrumb li:last-child::after {
+    content: '';
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.breadcrumb a.active {
+    color: var(--primary-color);
+}
+
+.product-details h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.product-details h3 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.desc ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.desc li {
+    margin-bottom: 10px;
+    list-style: circle;
+}
+.desc li::marker {
+    color: var(--primary-color);
+}
+
+.option span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options label {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.options label img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: -4px;
+}
+
+.options input[type="radio"]:checked + label {
+    background-color: #b8aa9d;
+    color: #fff;
+}
+
+.message {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.message i {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+.size {
+    margin-bottom: 20px;
+}
+
+.size .options label {
+    padding: 10px 50px;
+    margin: 3px;
+}
+
+.size .options input[type="radio"]:checked + label {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn button:hover {
+    background-color: #d73449;
+}
+
+.product-breadcrumb{
+}
+.product-breadcrumb li a{
+    font-size: 10px;
+}
+.product-breadcrumb li:not(:last-child)::after {
+    content: ">";
+    color: var(--primary-color);
+    margin: 0 10px;
+}
+.message{}
+.message span{}
+.message span a{
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: #ffc0c8;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.message span a i{}
+
+.size{}
+.size h4{
+    margin-bottom: 5px;
+}
+
+
+/* -- Footer Section CSS here -- */
+
+footer {
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.footer-top img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-top span {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social li {
+    margin: 0 10px;
+}
+
+.social li a {
+    color: #7a7878;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    background: #121212;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-bottom h5 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.footer-bottom h5 a {
+    color: var(--primary-color);
+    text-decoration: none !important;
+}
+
+.footer-bottom h5 a:hover {
+    text-decoration: underline;
+}
+

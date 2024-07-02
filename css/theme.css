@@ -1,0 +1,41 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Google Fonts - Montserat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #C42A3E;
+    --secondary-color: #2F2B28;
+}
+
+img {
+    max-width: 100%;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-fluid{
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.row-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-pad {
+    padding: 17px 0px;
+}

@@ -1,0 +1,177 @@
+/* -- Header menubar responsiveness starts from here -- */
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cart ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* -- Banner hero message responsiveness starts from here -- */
+
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 50px 20px;
+    }
+
+    .content h1 {
+        font-size: 2.5em;
+    }
+
+    .content h5 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content h5 {
+        font-size: 1em;
+    }
+}
+
+/* -- Responsive design for the content -- */
+
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 50px 20px;
+    }
+
+    .content h1 {
+        font-size: 2.5em;
+    }
+
+    .content h5 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content h5 {
+        font-size: 1em;
+    }
+}
+
+
+
+/* -- Breadcrumb Responsive Design -- */
+@media (max-width: 600px) {
+    .breadcrumb {
+        flex-direction: column;
+    }
+
+    .breadcrumb li {
+        margin-bottom: 5px;
+    }
+
+    .breadcrumb li:not(:last-child)::after {
+        content: none;
+    }
+}
+
+
+/* -- Responsive Design for About Section -- */
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .about-content, .content-image {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+}
+
+
+
+/* -- Items Responsiveness -- */
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-2-1 {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-2-1 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .col-2-1 h3 {
+        font-size: 1.5em;
+    }
+
+    .col-2-1 p {
+        font-size: 1em;
+    }
+}
+
+/* -- Products Responsiveness -- */
+
+@media (max-width: 768px) {
+    .col-1-4 {
+        flex: 1 1 45%;
+        margin: 10px 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-1-4 {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+/*Single product responsiveness*/
+
+@media (max-width: 768px) {
+    .col-1-2 {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .breadcrumb {
+        flex-wrap: wrap;
+    }
+}
